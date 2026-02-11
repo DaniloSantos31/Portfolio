@@ -1,15 +1,18 @@
 export const heroData = {
-    greetind: "Hello, I'm",
+    greeting: "😀 Olá, Eu Sou",
     name: "Danilo Santana",
     roles: [
         "Backend Developer",
-        "Java Developer"
+        "Java Developer",
+        "Software Developer",
+        "Frontend Developer"
     ],
-    description: "",
+    description: "Sou tecnólogo em Sistemas para Internet e dev backend, trabalho como desenvolvedor de software na YucaLabs",
 
     stats: [
         { number: "1+", label: "Years Experience"},
-        {number: "1+", label: "Ongoing Projects"}
+        { number: "3+", label: "Ongoing Projects"},
+        { number: "95%", label: "Client satisfaction"},
     ],
     socialLinks: [
         {
@@ -18,9 +21,9 @@ export const heroData = {
             icon: "Github"
         },
         {
-            name: "LinkedIn",
+            name: "Linkedin",
             url: "https://linkedin.com/in/danilo-santana",
-            icon: "LinkedIn"
+            icon: "Linkedin"
         },
         {
             name: "Email",
@@ -28,7 +31,7 @@ export const heroData = {
             icon: "Mail"
         }
     ],
-    etalButtons: [
+    ctaButtons: [
         {
             text: "View my work",
             href: "#projects",
