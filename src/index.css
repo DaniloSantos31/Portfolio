@@ -36,11 +36,11 @@
 }
 
 .animate-fade-in {
-  animation:fade-in 0.8s ease-out;
+  animation: fade-in 0.8s ease-out;
 }
 
 .animate-fade-in-up {
-  animation:fade-in-up 0.8s ease-out;
+  animation: fade-in-up 0.8s ease-out;
 }
 
 .animate-float {

@@ -40,10 +40,10 @@ const Navigation = () => {
     }, []);
 
     const navItems = [
-        { href: '#about', label: 'About' },
-        { href: '#projects', label: 'Projects' },
-        { href: '#skills', label: 'Skills' },
-        { href: '#contact', label: 'Contact' },
+        { href: '#about', label: 'Sobre' },
+        { href: '#projects', label: 'Projetos' },
+        { href: '#skills', label: 'Habilidades' },
+        { href: '#contact', label: 'Contato' },
     ]
 
     return (

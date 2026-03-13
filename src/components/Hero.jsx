@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { AArrowDown, Github, Linkedin, Mail }
+import { ArrowDown, Github, Linkedin, Mail }
 from "lucide-react";
 import {heroData} from '../data/hero';
 
@@ -9,7 +9,7 @@ const Hero = ({hasAnimated}) => {
     useState(0);
     const [currentText, setCurrentText] = useState
     ('');
-    const [isDeleting, setDeleting] = useState
+    const [isDeleting, setIsDeleting] = useState
     (false);
     const [typingSpeed, setTypingSpeed] = useState
     (150);
@@ -38,7 +38,7 @@ const Hero = ({hasAnimated}) => {
                 const timeout = setTimeout(()=> {
                     setCurrentText(currentText.slice(0, currentText.length - 1));
                 }, typingSpeed);
-                return clearTimeout(timeout);
+                return () => clearTimeout(timeout);
             } else {
                 setIsDeleting(false);
                 setCurrentTextIndex((prev) =>
@@ -115,25 +115,17 @@ const Hero = ({hasAnimated}) => {
                             {heroData.name}
                             </h1>
 
-                            <div className="h-12 md:h-16
-                            mb-6 flex items-center
-                            justify-center">
-                                <h2 className="text-2xl
-                                md:text-4xl font-semibold
-                                text-gray-700">
-                                    Eu sou {' '}
-                                    <span className="relative">
-                                        <span className="text-blue-600 font-bold">
-                                            {currentText}
-                                            <span className="animate-pulse ml-1">|</span>
-                                        </span>
-                                        <span className="absolute-bottom-1 left-0
-                                        w-full h-0.5
-                                        bg-linear-to-r
-                                        from-blue-500
-                                        to-purple-600"></span>
-                                    </span>
-                                </h2>
+                            <div className="h-12 md:h-16 mb-6 flex items-center justify-center">
+                            <h2 className="text-2xl md:text-4xl font-semibold text-gray-700">
+                            Eu sou {" "}
+                            <span className="relative">
+                            <span className="text-blue-600 font-bold">
+                            {currentText}
+                            <span className="animate-pulse ml-1">|</span>
+                            </span>
+                            <span className="left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-purple-600"></span>
+                            </span>
+                            </h2>
                             </div>
 
                             <p className="text-base md>text-lg
@@ -149,43 +141,25 @@ const Hero = ({hasAnimated}) => {
                             justify-center mb-8
                             animate-fade-in-up
                             delay-300">
-                                {heroData.ctaButtons.map
-                                ((button, index) => (
-                                    <a key={index} href=
-                                    {button.href}
-                                    className={`group
-                                        relative px-5 py-2.5
-                                        rounded-lg
-                                        transition-all
-                                        duration-300
-                                        font-medium text-sm $
-                                        {button.variant ===
-                                        'primary' ? 'bg-black'
-                                        'text-white' shadow-lg
-                                        hover:shadow-xl
-                                        hover:bg-gray-800' :
-                                        border-2 border-black
-                                        text-white
-                                        hover:bg-black
-                                        hover:text-while}`}>
-                                            {button.variant ===
-                                            'primary' && (
-                                                <div className="absolute inset-0
-                                                bg-linear-to-r
-                                                from-blue-600
-                                                to-purple-600
-                                                rounded-lg
-                                                opacity-0
-                                                group-hover:opacity-100
-                                                transition-opacity
-                                                duration-300">
-                                            </div>
-                                            )}
-                                            <span className={button.variant ===
-                                                'primary' ? 'relative z-10' :
-                                                ''
-                                            }> {button.text}</span>
-                                        </a>
+                                {heroData.ctaButtons.map((button, index) => (
+                                <a
+                                key={index}
+                                href={button.href}
+                                className={`group relative px-5 py-2.5 rounded-lg transition-all duration-300 font-medium text-sm ${
+                                button.variant === "primary"
+                                ? "bg-black text-white shadow-lg hover:shadow-xl hover:bg-gray-800"
+                                : "border-2 border-black text-black hover:bg-black hover:text-white"
+                                }`}
+                                >
+                                {button.variant === "primary" && (
+                                <div
+                                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                ></div>
+                                )}
+                                <span className={button.variant === "primary" ? "relative z-10" : ""}>
+                                {button.text}
+                                </span>
+                                </a>
                                 ))}
                             </div>
                             <div className="flex justify-center space-x-6 mb-8
@@ -219,11 +193,17 @@ const Hero = ({hasAnimated}) => {
                                     </div>
                                 ))}
                             </div>
-
-                            <div className="animate-bounce">
-                                <button onClick={scrollToAbout}
-                                className="group flex flex-col items-center text-gray-600 hover:text-black"></button>
-                            </div>
+                <div className="animate-bounce">
+                <button onClick={scrollToAbout}
+                className="group flex
+                flex-col items-center
+                text-gray-600
+                hover:text-black
+                transition-colors cursor-pointer">
+                    <span className="text-sm mb2">Saiba mais</span>
+                    <ArrowDown className="w-6 h-6 group-hover:transform group-hover:translate-y-1 transition-transform"/>
+                </button>
+                </div>
                     </div>
                 </div>
             </section>
