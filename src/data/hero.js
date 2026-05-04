@@ -20,7 +20,7 @@ export const heroData = {
         },
         {
             name: "Linkedin",
-            url: "https://linkedin.com/in/danilo-santana",
+            url: "https://linkedin.com/in/danilo-santana-b8595326b",
             icon: "Linkedin"
         },
         {
