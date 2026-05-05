@@ -1,5 +1,5 @@
 import React from "react";
-import {Github, Linkedin, Mail, Code, Palette, Smartphone, ExternalLink, GitCommitHorizontal} from "lucide-react";
+import {Github, Linkedin, Mail, Code, Palette, Smartphone, ExternalLink} from "lucide-react";
 
 const About = ({ hasAnimated }) => {
     const features = [
@@ -36,17 +36,19 @@ const About = ({ hasAnimated }) => {
                 translate-y-10'}`}>
                     <h2 className="text-4xl
                     font-bold mb-12
-                    text-center">About Me</h2>
+                    text-center">Sobre mim</h2>
                     <div className="grid
                     md:grid-cols-2 gap-12
                     items-center">
                         <div>
                             <p className="text-lg
                             text-gray-700 mb-6">
-                                Sou desenvolvedor de software
-                                com mais de um ano de experiência
-                                na criação de sistemas web, api rest,
-                                sistemas mobile com foco em backend.
+                                Desenvolvedor de software com experiência em aplicações web,
+                                APIs REST e soluções mobile, especializado em backend. Atuo na
+                                construção de sistemas escaláveis e bem estruturados, com foco em performance,
+                                qualidade de código e boas práticas. Tenho interesse em resolver problemas reais
+                                através da tecnologia e estou em constante evolução para entregar soluções eficientes e de alto impacto.
+
                             </p>
                             <div className="flex space-x-4">
                                 <Github

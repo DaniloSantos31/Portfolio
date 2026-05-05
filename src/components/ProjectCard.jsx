@@ -3,7 +3,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const ProjectCard = ({ project }) => {
     return (
-        <div className="m-6 group bg-white border border-gray-200 rounded-lg
+        <div className="group bg-white border border-gray-200 rounded-lg
         overflow-hidden hover:shadow-lg transition-all duration-300
         hover:-translate-y-1 flex flex-col h-full">
             <div className="h-48 bg-gradient-to-br

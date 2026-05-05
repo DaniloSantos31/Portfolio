@@ -1,16 +1,16 @@
 export const projects = [
     {
-        title: "FlexPOS Stone",
-        description: "Sistema de pagamento e cashback para máquinetas POS",
-        tech: ["Kotlin", "Ketpack Compose", "Ktor"],
+        title: "FlexPOS",
+        description: "Sistema de pagamento e cashback para maquinetas POS Android",
+        tech: ["Kotlin", "Ketpack Compose", "Ktor", "PostgreSQL"],
         github: "",
         demo: ""
     },
     {
-        title: "Projeto 2",
-        description: "Em breve",
-        tech: [],
-        github: "",
+        title: "Meu portfolio",
+        description: "Meu primeiro portfolio",
+        tech: ["React", "TailwindCSS"],
+        github: "https://github.com/DaniloSantos31/Portfolio.git",
         demo: ""
     },
     {

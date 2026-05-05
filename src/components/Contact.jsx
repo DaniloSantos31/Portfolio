@@ -19,11 +19,11 @@ const Contact = ({ hasAnimated }) => {
                     'opacity-100 translate-y-0' :
                     'opacity-0 translate-y-10'}`}>
                         <h2 className="text-4xl font-bold mb-8">
-                            Vamos trabalhar juntos!
+                            Vamos trabalhar juntos?!
                         </h2>
                         <p className="text-xl text-gray-600 mb-12 max-w-2xl
                         mx-auto">
-                            Estou interessado em novas oportunidades de trabalhar
+                            Estou sempre interessado em novas oportunidades de trabalhar
                             em projetos desafiadores. Fique a vontade se quiser
                             colaborar ou só dizer um oi!
                         </p>

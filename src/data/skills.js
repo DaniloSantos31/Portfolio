@@ -1,5 +1,5 @@
 export const skills = [
-    { category: "Frontend", items: ["HTML" , "CSS", "React"]},
-    { category: "Backend", items: ["Ktor", "Spring boot", "PostgreeSQL"]},
-    { category: "Tools", items: ["Git"]}
+    { category: "Frontend", items: ["React", "TailwindCSS"]},
+    { category: "Backend", items: ["Ktor", "Spring boot", "PostgreSQL"]},
+    { category: "Tools", items: ["Git", "Docker"]}
 ];

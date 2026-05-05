@@ -14,7 +14,7 @@ const Skills = ({ hasAnimated }) => {
                 font-bold mb-12 text-center">
                     Tecnologias e Habilidades
                 </h2>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-8 px-4">
                     {skills.map((skillGroup,index) => (
                         <div key={index} className="bg-white p-8 rounded-lg
                         border border-gray-200">

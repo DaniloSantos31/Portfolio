@@ -60,7 +60,7 @@ const Navigation = () => {
                                 'text-black' : 'text-black'}`}
                                 onClick={() => window.scrollTo({
                                     top: 0, behavior: 'smooth'})}>
-                                        Portfolio
+                                        Meu Portfolio
                                 </div>
 
                                 <div className="hidden md:flex
@@ -69,7 +69,8 @@ const Navigation = () => {
                                         <a key={item.href} href=
                                         {item.href} className=
                                         {`transition-colors $
-                                        {isScrolled ? 'text-gray-600
+                                        {isScrolled ?
+                                        'text-gray-600
                                             hover:text-black' :
                                             'text-gray-700
                                             hover:text-black'}`} onClick=

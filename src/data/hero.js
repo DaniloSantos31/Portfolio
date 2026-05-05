@@ -4,14 +4,10 @@ export const heroData = {
     roles: [
         "Dev Backend",
         "Dev Java",
+        "Dev Kotlin",
     ],
-    description: "Sou tecnólogo em Sistemas para Internet e dev backend, trabalho como desenvolvedor de software na YucaLabs",
+    description: "Tecnólogo em Sistemas para Internet e dev backend, atualmente trabalho como desenvolvedor de software na YucaLabs",
 
-    stats: [
-        { number: "1+", label: "Anos de experiência"},
-        { number: "3+", label: "Projetos em andamento"},
-        { number: "95%", label: "Satisfação do cliente"},
-    ],
     socialLinks: [
         {
             name: "Github",
