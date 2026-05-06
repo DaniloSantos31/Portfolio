@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { heroData } from "../data/hero";
+import foto from "../assets/DaniloFormatura.jpeg";
 
 const Hero = ({ hasAnimated }) => {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -116,7 +117,7 @@ const Hero = ({ hasAnimated }) => {
             <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
 
             <img
-                src="/src/assets/DaniloFormatura.jpeg"
+                src={foto}
                 alt="Danilo Santana"
                 className="relative w-100 h-100 object-cover rounded-full shadow-2xl border-4 border-white"
             />

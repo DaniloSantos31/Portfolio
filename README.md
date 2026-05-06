@@ -1,16 +1,74 @@
-# React + Vite
+# 💼 Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do meu portfólio pessoal, desenvolvido com **React** e **Tailwind CSS**, com o objetivo de apresentar meus projetos, habilidades e experiências de forma moderna, responsiva e acessível.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+* ⚛️ **React** — Biblioteca JavaScript para construção de interfaces dinâmicas
+* 🎨 **Tailwind CSS** — Framework utilitário para estilização rápida e responsiva
+* 🌐 **HTML5 & CSS3**
+* 🧠 **JavaScript (ES6+)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Preview](image.png)
+
+## ✨ Funcionalidades
+
+* Layout responsivo (mobile-first)
+* Navegação suave entre seções
+* Seções de:
+
+  * Sobre mim
+  * Projetos
+  * Habilidades
+  * Contato
+* Integração com redes sociais
+* Design moderno e minimalista
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── tailwind.config.js
+├── package.json
+└── README.md
+```
+
+## 📌 Melhorias Futuras
+
+* Adicionar animações com Framer Motion
+* Implementar modo escuro (dark mode)
+* Integração com CMS para projetos dinâmicos
+* SEO otimizado
+
+---
+
+## 📞 Contato
+
+* LinkedIn: www.linkedin.com/in/danilo-santana-b8595326b
+* Email: [dandan.santos3103@gmail.com](mailto:dandan.santos3103@gmail.com)
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo como base para o seu próprio portfólio.
+
+---
+
+## 🙌 Agradecimentos
+
+Obrigado por visitar este repositório! Feedbacks são sempre bem-vindos.
