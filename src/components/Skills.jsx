@@ -12,7 +12,7 @@ const Skills = ({ hasAnimated }) => {
             'opacity-0 translate-y-10'}`}>
                 <h2 className="text-4xl
                 font-bold mb-12 text-center">
-                    Tecnologias e Habilidades
+                    Skills
                 </h2>
                 <div className="grid md:grid-cols-3 gap-8 px-4">
                     {skills.map((skillGroup,index) => (

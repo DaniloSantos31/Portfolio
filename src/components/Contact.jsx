@@ -24,8 +24,7 @@ const Contact = ({ hasAnimated }) => {
                         <p className="text-xl text-gray-600 mb-12 max-w-2xl
                         mx-auto">
                             Estou sempre interessado em novas oportunidades de trabalhar
-                            em projetos desafiadores. Fique a vontade se quiser
-                            colaborar ou só dizer um oi!
+                            em projetos desafiadores.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center
                         gap-4 sm:gap-8">

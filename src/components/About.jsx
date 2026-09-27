@@ -5,25 +5,25 @@ const About = ({ hasAnimated }) => {
     const features = [
     {
         icon: <Code className="w-8 h-8 mb-4
-        text-black" />,
+        text-black hover:text-amber-900" />,
         title: "Código limpo",
         description: "Escrevendo código manutensível, seguindo boas práticas de desenvolvimentos"
     },
     {
         icon: <Palette className="w-8 h-8 mb-4
-        text-black" />,
+        text-black hover:text-amber-900" />,
         title: "UI/UX",
         description: "Criando design moderno e intuitivo"
     },
     {
         icon: <Smartphone className="w-8 h-8 mb-4
-        text-black" />,
+        text-black hover:text-amber-900" />,
         title: "Arquitetura",
         description: "Procuro seguir uma organização segura e confiável"
     },
     {
         icon: <ExternalLink className="w-8 h-8 mb-4
-        text-black" />,
+        text-black hover:text-amber-900" />,
         title: "Performance",
         description: "Desenvolvendo com carregamento e interação flúida"
     },

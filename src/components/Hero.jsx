@@ -63,8 +63,8 @@ const Hero = ({ hasAnimated }) => {
             </h1>
 
             <h2 className="text-2xl md:text-4xl font-semibold text-gray-700 mb-6">
-                Eu sou{" "}
-                <span className="text-blue-600 font-bold">
+                {""}
+                <span className="text-amber-900 font-bold">
                 {currentText}
                 <span className="ml-1 animate-pulse">|</span>
                 </span>
@@ -81,8 +81,8 @@ const Hero = ({ hasAnimated }) => {
                     href={button.href}
                     className={`px-5 py-3 rounded-lg font-medium transition ${
                     button.variant === "primary"
-                        ? "bg-black text-white hover:bg-gray-800"
-                        : "border border-black text-black hover:bg-black hover:text-white"
+                        ? "border border-black bg-black text-white hover:bg-white hover:text-black"
+                        : "border border-black text-black hover:bg-amber-900 hover:text-white"
                     }`}
                 >
                     {button.text}
@@ -114,12 +114,12 @@ const Hero = ({ hasAnimated }) => {
 
             <div className="flex-1 flex justify-center">
             <div className="relative">
-            <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
+            <div className="absolute inset-0 bg-amber-900 blur-3xl opacity-20 rounded-full"></div>
 
             <img
                 src={foto}
                 alt="Danilo Santana"
-                className="relative w-100 h-100 object-cover rounded-full shadow-2xl border-4 border-white"
+                className="relative w-100 h-100 object-cover square shadow-2xl border-2"
             />
             </div>
         </div>
@@ -130,7 +130,7 @@ const Hero = ({ hasAnimated }) => {
             onClick={scrollToAbout}
             className="flex flex-col items-center text-gray-600 hover:text-black transition"
         >
-            <span className="text-sm mb-2 cursor-pointer">Saiba mais</span>
+            <span className="text-sm mb-2 cursor-pointer"></span>
             <ArrowDown className="w-6 h-6 animate-bounce cursor-pointer" />
         </button>
         </div>

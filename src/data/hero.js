@@ -1,12 +1,11 @@
 export const heroData = {
-    greeting: "😀 Olá, Me chamo",
+    greeting: "Olá, Me chamo",
     name: "Danilo Santana",
     roles: [
-        "Dev Backend",
-        "Dev Java",
-        "Dev Kotlin",
+        "Desenvolvedor Backend",
+        "Desenvolvedor de software",
     ],
-    description: "Tecnólogo em Sistemas para Internet e dev backend, atualmente trabalho como desenvolvedor de software na YucaLabs",
+    description: "Criando projetos web, APIs, soluções funcionais e interfaces intuitivas com o objetivo de me tornar um dev fullstack, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias.",
 
     socialLinks: [
         {
@@ -27,7 +26,7 @@ export const heroData = {
     ],
     ctaButtons: [
         {
-            text: "Conheça meu trabalho",
+            text: "Meus projetos",
             href: "#projects",
             variant: "primary"
         },

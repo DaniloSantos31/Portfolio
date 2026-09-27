@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
-
-import {Menu, X} from "lucide-react"
+import {Download, Menu, X} from "lucide-react"
 
 const Navigation = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,6 +43,7 @@ const Navigation = () => {
         { href: '#projects', label: 'Projetos' },
         { href: '#skills', label: 'Habilidades' },
         { href: '#contact', label: 'Contato' },
+        { href: '/Danilo_Santana_CV.pdf', label: 'CV', isDownload: true}
     ]
 
     return (
@@ -60,32 +60,36 @@ const Navigation = () => {
                                 'text-black' : 'text-black'}`}
                                 onClick={() => window.scrollTo({
                                     top: 0, behavior: 'smooth'})}>
-                                        Meu Portfolio
+                                        danilo.dev
                                 </div>
-
                                 <div className="hidden md:flex
                                 space-x-8">
                                     {navItems.map((item) => (
-                                        <a key={item.href} href=
-                                        {item.href} className=
-                                        {`transition-colors $
-                                        {isScrolled ?
-                                        'text-gray-600
-                                            hover:text-black' :
-                                            'text-gray-700
-                                            hover:text-black'}`} onClick=
-                                            {(e) => {
+                                        <a
+                                            key={item.href}
+                                            href={item.href}
+                                            className={`transition-colors ${
+                                                isScrolled
+                                                    ? 'text-gray-600 hover:text-black'
+                                                    : 'text-gray-700 hover:text-black'
+                                            }`}
+                                            onClick={(e) => {
+                                                if (item.isDownload) {
+                                                    return;
+                                                }
+
                                                 e.preventDefault();
-                                                scrollToSection(item.
-                                                    href);
-                                            }}>
-                                                {item.label}
-                                            </a>
+                                                scrollToSection(item.href);
+                                            }}
+                                            download={item.isDownload ? 'Danilo_Santana_CV.pdf' : undefined}
+                                        >
+                                            {item.label}
+                                        </a>
                                     ))}
                                 </div>
 
                                 <button onClick={toggleMobileMenu} className={`md:hidden p-2 transition-colors cursor-pointer ${isScrolled ? 'text-gray-600 hover:text-black' :
-                                    'text-gray-700 hover:text:black'
+                                    'text-gray-700 hover:text-black'
                                 }`}> 
                                 {isMobileMenuOpen ? <X
                                 className="w-6 h-6/>" /> :
@@ -95,15 +99,24 @@ const Navigation = () => {
                             <div className={`md:hidden
                                 transition-all duration-300
                                 ease-in-out ${isMobileMenuOpen ?
-                                    'max=h=64 opacity-100 mt-4' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+                                    'max-h-64 opacity-100 mt-4' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                                         <div className="bg-white border
                                         border-gray-100 rounded-lg shadow-lg p-4 space-y-4">
                                             {navItems.map((item) => (
-                                                <a key={item.href} href={item.href} onClick={(e) =>
-                                                {e.preventDefault();
-                                                    scrollToSection(item.href);
-                                                }} className="block text-gray-600
-                                                hover:text-black transiction-colors py-2">
+                                                <a
+                                                    key={item.href}
+                                                    href={item.href}
+                                                    onClick={(e) => {
+                                                        if (item.isDownload) {
+                                                            closeMobileMenu();
+                                                            return;
+                                                        }
+                                                        e.preventDefault();
+                                                        scrollToSection(item.href);
+                                                    }}
+                                                    download={item.isDownload ? 'Danilo_Santana_CV.pdf' : undefined}
+                                                    className="block text-gray-600 hover:text-black transition-colors py-2"
+                                                >
                                                     {item.label}
                                                 </a>
                                             ))}
